@@ -24,7 +24,3 @@ menu:
       name: Contact
       url: /contact/
       weight: 50
-    - identifier: test
-      name: Test
-      url: /test/
-      weight: 60
