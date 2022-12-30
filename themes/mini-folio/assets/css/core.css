@@ -1,0 +1,11 @@
+body {
+    background-color: var(--theme);
+}
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
+}

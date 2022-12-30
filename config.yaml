@@ -1,0 +1,30 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: My New Hugo Site
+theme: mini-folio
+
+author: Paul Walczak
+
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: portfolio
+      name: Portfolio
+      url: /portfolio/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+    - identifier: test
+      name: Test
+      url: /test/
+      weight: 60
