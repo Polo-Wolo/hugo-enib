@@ -9,5 +9,9 @@ body {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
     padding: var(--gap);
-    background-color: grey;
+    background-color: none;
+}
+
+h1{
+    padding-bottom: 40px;
 }

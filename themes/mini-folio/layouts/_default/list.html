@@ -1,5 +1,5 @@
 {{ define "main" }}
-    list.html
+    <h1>{{ .Title }}</h1>
     <ul>
         {{ range (.Pages.ByParam "start-date").Reverse }}
             <li>
