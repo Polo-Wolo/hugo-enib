@@ -7,7 +7,7 @@
 	{{- $main		:= resources.Get "css/main.css" }}
 	{{- $reset		:= resources.Get "css/core/reset.css" }}
 	{{- $theme_vars	:= resources.Get "css/core/theme-vars.css" }}
-	{{- $common		:= (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
+	{{- $common		:= resources.Match "css/common/*.css" | resources.Concat "assets/css/common.css" }}
 	{{- $extended	:= resources.Get "css/extended.css" }}
 	{{- $stylesheet	:= (slice $main $reset $theme_vars $common $extended) | resources.Concat "assets/css/stylesheet.css"  }}
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ $stylesheet.RelPermalink }}" />
