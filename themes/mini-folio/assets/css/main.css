@@ -9,5 +9,18 @@ body {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
     padding: var(--gap);
-    background-color: grey;
+}
+
+.section {
+    margin: 1rem auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.section p {
+    background-color: blueviolet;
+}
+.card {
+    background-color: var(--card-bg);
 }

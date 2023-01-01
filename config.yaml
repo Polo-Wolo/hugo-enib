@@ -24,3 +24,59 @@ menu:
       name: Contact
       url: /contact/
       weight: 50
+
+Params:
+  # Experience
+  experience:
+    #title: Custom title
+    enable: true
+
+  # Education
+  education:
+    title: Custom Education title
+    enable: true
+
+  # Volunteering
+  volunteering:
+    #title: Custom title
+    enable: true
+
+  # Training
+  training:
+    #title: Custom title
+    enable: true
+
+  # Skills
+  skills:
+    #title: Custom title
+    enable: true
+    types:
+      - name: Microcontroller programming
+        list:
+          - Arduino
+          - STM32
+          - CM33
+      - name: Programming
+        list:
+          - Python
+          - C
+          - C++
+          - QT Creator
+          - Matlab
+      - name: Web development
+        list:
+          - Vue
+          - Flask
+          - Hugo
+          - TailwindCSS
+          - Jinja
+      - name: CAD
+        list:
+          - Autodesk Fusion 360
+          - CATIA
+          - EAGLE
+          - Blender (newbie)
+      - name: Languages
+        list:
+          - French (native)
+          - English (proficient)

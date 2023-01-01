@@ -1,0 +1,5 @@
+{{ if .Site.Params.training.enable | default false }}
+<section id="training" class="section">
+	<h1>{{ .Site.Params.training.title | default "Training" }}</h1>
+</section>
+{{ end }}

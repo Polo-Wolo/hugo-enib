@@ -1,0 +1,5 @@
+{{ if .Site.Params.volunteering.enable | default false }}
+<section id="volunteering" class="section">
+	<h1>{{ .Site.Params.volunteering.title | default "Volunteering" }}</h1>
+</section>
+{{ end }}
