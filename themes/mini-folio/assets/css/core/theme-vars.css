@@ -6,15 +6,16 @@
     --main-width: 900px;
     --header-height: 60px;
     --footer-height: 60px;
-    --radius: 8px;
+    --radius: 12px;
+    --title-size: 17px;
 
-    --theme: rgb(255, 255, 255);
+    --theme: rgb(234, 237, 240);
     --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
+    --primary: rgb(50, 50, 50);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
-    --card-bg: rgb(28, 29, 33);
+    --card-bg: rgb(255, 255, 255);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
 }

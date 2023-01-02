@@ -52,11 +52,13 @@ Params:
     enable: true
     types:
       - name: Microcontroller programming
+        svg : microchip-solid
         list:
           - Arduino
           - STM32
           - CM33
       - name: Programming
+        svg : code-solid
         list:
           - Python
           - C
@@ -64,6 +66,7 @@ Params:
           - QT Creator
           - Matlab
       - name: Web development
+        svg : desktop-solid
         list:
           - Vue
           - Flask
@@ -71,12 +74,14 @@ Params:
           - TailwindCSS
           - Jinja
       - name: CAD
+        svg : cube-solid
         list:
           - Autodesk Fusion 360
           - CATIA
           - EAGLE
           - Blender (newbie)
       - name: Languages
+        svg : language-solid
         list:
           - French (native)
           - English (proficient)

@@ -1,5 +1,5 @@
-{{- $class:= .Scratch.Get "class" -}}
-{{- $name := .Scratch.Get "name" -}}
+{{- $class:= .class -}}
+{{- $name := .name -}}
 {{- $fname:=print "fontawesome/" $name ".svg" -}}
 <span class="{{ $class }}">
     {{- $path:="<path" -}} {{- $fill:="<path fill=\" currentColor\"" -}} {{ replace (readFile $fname) $path $fill | safeHTML }}

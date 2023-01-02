@@ -7,20 +7,59 @@ body {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
-    padding: var(--gap);
+    margin: auto;   
 }
 
 .section {
-    margin: 1rem auto;
-    background-color: black;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section#skills .card{
+    margin-top: 1rem;
 }
 
-.section p {
-    background-color: blueviolet;
-}
 .card {
     background-color: var(--card-bg);
+    padding: var(--gap);
+    border-radius: var(--radius);
+    width: 75%;
+    border: 5px;
+    border-color: var(--border);
+}
+
+.card .color-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 9999rem;
+    flex-shrink: 0;
+    background-color: var(--color);
+    margin-right: var(--gap);
+}
+
+.card-row {
+    display: flex;
+}
+
+.card-title {
+    font-size: var(--title-size);
+    font-weight: 600;
+}
+.icon {
+    color: white;
+    display: block;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icon-link:hover {
+    color: var(--color);
+    cursor: pointer;
+}
+.content {
+    font-size: small;
+    font-weight: 300;
 }
