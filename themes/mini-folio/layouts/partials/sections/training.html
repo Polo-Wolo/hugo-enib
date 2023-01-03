@@ -1,5 +1,7 @@
 {{ if .Site.Params.training.enable | default false }}
 <section id="training" class="section">
 	<h1>{{ .Site.Params.training.title | default "Training" }}</h1>
+	{{ $list := .Site.Params.training.list }}
+	{{ partial "components/timeline-training.html" (dict "context" . "list" $list) }}
 </section>
 {{ end }}

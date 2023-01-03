@@ -7,7 +7,9 @@ body {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;   
+    margin: auto;
+    border: 0.2rem;
+    border-color: black;
 }
 
 .section {
@@ -15,15 +17,19 @@ body {
     flex-direction: column;
     align-items: center;
 }
-section#skills .card{
-    margin-top: 1rem;
+.section h1 {
+    margin-top: calc(var(--gap)*3);
+    margin-bottom: var(--gap);
+}
+.section .card{
+    margin-top: var(--gap);
 }
 
 .card {
     background-color: var(--card-bg);
     padding: var(--gap);
     border-radius: var(--radius);
-    width: 75%;
+    min-width: 60%;
     border: 5px;
     border-color: var(--border);
 }
@@ -62,4 +68,48 @@ section#skills .card{
 .content {
     font-size: small;
     font-weight: 300;
+}
+.location {
+    font-size: small;
+    font-weight: 200;
+}
+
+.timeline {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.timeline .spline {
+    position: relative;
+    margin: 0 var(--gap);
+}
+.timeline .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.6rem;
+    height: 100%;
+    flex-shrink: 0;
+    background-color: var(--color);
+}
+
+.timeline .circle {
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    top :calc(var(--gap)*2 + var(--title-size)/4);
+    border-radius: 9999rem;
+    flex-shrink: 0;
+    left: 50%;
+    translate: -50%;
+    background-color: var(--color);
+}
+.timeline .date {
+    margin-top: calc(var(--gap)*2 + var(--title-size)/4);
+    font-size: medium;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
 }

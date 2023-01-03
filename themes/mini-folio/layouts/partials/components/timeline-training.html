@@ -1,0 +1,26 @@
+{{- $list:= .list -}}
+{{ range $list }}
+<div class="timeline">
+    <div class="date">{{ .date }}</div>
+    <div class="spline">
+        <span class="line"></span>
+        <span class="circle"></span>
+    </div>
+    <div class="card timeline-card">
+        <div class="card-header">
+            <span class="card-title">
+                {{ .title }}
+            </span>
+            <span class="location">
+                {{ .city }}, {{ .country }}
+            </span>
+        </div>
+        {{- $array := .list -}}
+        {{ range .content}}
+        <div class="content">
+            {{ . }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end   }}
