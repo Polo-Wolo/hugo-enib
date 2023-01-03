@@ -7,7 +7,8 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 12px;
-    --title-size: 17px;
+    --title-size: 16px;
+    --content-size: 13px;
 
     --theme: rgb(234, 237, 240);
     --entry: rgb(255, 255, 255);
@@ -30,4 +31,15 @@
     --card-bg: rgb(31, 31, 36);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+}
+
+
+@media screen and (max-width: 768px) {
+    /* theme-vars */
+    :root {
+        --gap: 16px;
+        --title-size: 15px;
+        --content-size: 12px;
+        --radius: 8px;
+    }
 }

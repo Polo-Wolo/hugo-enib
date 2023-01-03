@@ -16,7 +16,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 var(--gap);
 }
+
 .section h1 {
     margin-top: calc(var(--gap)*3);
     margin-bottom: var(--gap);
@@ -29,9 +31,12 @@ body {
     background-color: var(--card-bg);
     padding: var(--gap);
     border-radius: var(--radius);
-    min-width: 60%;
-    border: 5px;
-    border-color: var(--border);
+    max-width: 750px;
+    flex-grow: 1;
+}
+.card-fake {
+    max-width: 750px;
+    flex-grow: 1;
 }
 
 .card .color-circle {
@@ -59,6 +64,9 @@ body {
     display: block;
     height: 1.25rem;
     width: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-link:hover {
@@ -66,12 +74,15 @@ body {
     cursor: pointer;
 }
 .content {
-    font-size: small;
+    font-size: var(--content-size);
     font-weight: 300;
 }
+.content-ml {
+    margin-left: calc(var(--gap)/2);
+}
 .location {
-    font-size: small;
-    font-weight: 200;
+    font-size: var(--content-size);
+    font-weight: 300;
 }
 
 .timeline {
@@ -83,11 +94,11 @@ body {
     position: relative;
     margin: 0 var(--gap);
 }
-.timeline .line {
+.line {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 0.6rem;
+    width: 0.5rem;
     height: 100%;
     flex-shrink: 0;
     background-color: var(--color);
@@ -96,8 +107,8 @@ body {
 .timeline .circle {
     position: absolute;
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     top :calc(var(--gap)*2 + var(--title-size)/4);
     border-radius: 9999rem;
     flex-shrink: 0;
@@ -106,10 +117,25 @@ body {
     background-color: var(--color);
 }
 .timeline .date {
-    margin-top: calc(var(--gap)*2 + var(--title-size)/4);
-    font-size: medium;
+    font-size: var(--content-size);
+    font-style: italic;
+    min-width: 5.2rem;
+    text-align: right;
 }
 .card-header {
     display: flex;
     justify-content: space-between;
+}
+
+.medium-line,
+.small-line {
+    border-radius: 999rem;
+}
+.medium-line {
+    margin: 0.5rem 0;
+    height: 1.25rem;
+}
+
+.small-line {
+    height: 0.75rem;
 }

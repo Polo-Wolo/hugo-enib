@@ -1,7 +1,21 @@
 {{- $list:= .list -}}
+
+<div class="timeline">
+    <div class="spline">
+        <span class="line small-line"></span>
+    </div>
+    <div class="card-fake"> </div>
+</div>
+
+<div class="timeline">
+    <div class="spline">
+        <span class="line medium-line"></span>
+    </div>
+    <div class="card-fake"> </div>
+</div>
+
 {{ range $list }}
 <div class="timeline">
-    <div class="date">{{ .date }}</div>
     <div class="spline">
         <span class="line"></span>
         <span class="circle"></span>
@@ -15,12 +29,28 @@
                 {{ .city }}, {{ .country }}
             </span>
         </div>
+        <span class="date">{{ .date }}</span>
         {{- $array := .list -}}
         {{ range .content}}
-        <div class="content">
+        <div class="content content-ml">
             {{ . }}
         </div>
         {{ end }}
     </div>
 </div>
-{{ end   }}
+{{ end }}
+
+
+<div class="timeline">
+    <div class="spline">
+        <span class="line medium-line"></span>
+    </div>
+    <div class="card-fake"> </div>
+</div>
+
+<div class="timeline">
+    <div class="spline">
+        <span class="line small-line"></span>
+    </div>
+    <div class="card-fake"> </div>
+</div>

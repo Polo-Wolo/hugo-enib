@@ -47,14 +47,14 @@ Params:
     enable: true
     list:
       - title: Generalist Engineer
-        date: 2019-2024
+        date: 2019 - 2024
         content: 
           - ENIB - École Nationale d'Ingénieur de Brest
           - General - Electronics, Mechatronics, Computer Science
           - Signal and image processing option
         city: Plouzané
         country: FRANCE
-      - title: SST
+      - title: Sauveteur Secouriste du Travail
         date: Jan. 2022
         content: 
           - First Aid at Work
