@@ -2,7 +2,6 @@ body {
     background-color: var(--theme);
 }
 
-
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -15,9 +14,18 @@ body {
 .section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0 var(--gap);
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+
 
 .section h1 {
     margin-top: calc(var(--gap)*3);
@@ -34,6 +42,7 @@ body {
     max-width: 750px;
     flex-grow: 1;
 }
+
 .card-fake {
     max-width: 750px;
     flex-grow: 1;
@@ -80,10 +89,6 @@ body {
 .content-ml {
     margin-left: calc(var(--gap)/2);
 }
-.location {
-    font-size: var(--content-size);
-    font-weight: 300;
-}
 
 .timeline {
     display: flex;
@@ -116,11 +121,10 @@ body {
     translate: -50%;
     background-color: var(--color);
 }
-.timeline .date {
+.card .italic {
     font-size: var(--content-size);
     font-style: italic;
     min-width: 5.2rem;
-    text-align: right;
 }
 .card-header {
     display: flex;
@@ -138,4 +142,17 @@ body {
 
 .small-line {
     height: 0.75rem;
+}
+.nav-container {
+    display: flex;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        flex-grow: 1;
+    }
 }

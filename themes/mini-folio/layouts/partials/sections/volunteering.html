@@ -1,5 +1,26 @@
 {{ if .Site.Params.volunteering.enable | default false }}
 <section id="volunteering" class="section">
 	<h1>{{ .Site.Params.volunteering.title | default "Volunteering" }}</h1>
+	<div class="container">
+	{{ range .Site.Params.volunteering.list }}
+		<div class="card">
+			<div class="card-header">
+				<span class="card-title">
+					{{ .organisation }}
+				</span>
+				<span class="content"> {{ .date }} </span>
+			</div>
+			<span class="italic">
+                {{ .city }}, {{ .country }}
+            </span>
+			{{- $array := .list -}}
+			{{ range .content}}
+				<div class="content content-ml">
+					{{ . }}
+				</div>
+			{{ end }}
+		</div>
+		{{ end }}
+	</div>
 </section>
 {{ end }}

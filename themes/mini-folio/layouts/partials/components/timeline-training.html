@@ -25,16 +25,16 @@
             <span class="card-title">
                 {{ .title }}
             </span>
-            <span class="location">
+            <span class="content">
                 {{ .city }}, {{ .country }}
             </span>
         </div>
-        <span class="date">{{ .date }}</span>
+        <span class="italic">{{ .date }}</span>
         {{- $array := .list -}}
         {{ range .content}}
-        <div class="content content-ml">
-            {{ . }}
-        </div>
+            <div class="content content-ml">
+                {{ . }}
+            </div>
         {{ end }}
     </div>
 </div>
