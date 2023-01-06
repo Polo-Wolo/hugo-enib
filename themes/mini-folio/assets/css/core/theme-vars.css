@@ -8,7 +8,7 @@
     --footer-height: 60px;
     --radius: 12px;
     --title-size: 16px;
-    --content-size: 13px;
+    --content-size: 14px;
 
     --theme: rgb(245, 245, 245);
     --entry: rgb(255, 255, 255);
@@ -38,8 +38,6 @@
     /* theme-vars */
     :root {
         --gap: 16px;
-        --title-size: 15px;
-        --content-size: 12px;
         --radius: 8px;
     }
 }

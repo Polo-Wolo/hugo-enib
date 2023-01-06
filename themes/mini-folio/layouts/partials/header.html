@@ -1,3 +1,4 @@
+
 <header class="header">
 	<nav class="nav">
 		<div class="logo">
@@ -7,10 +8,15 @@
 		<div class="nav-container">
 			<!-- Nav links -->
 			<ul id="menu">
+				{{- $currentPage := . }}
 				{{- range .Site.Menus.main }}
+				{{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+				{{- $page_url:= $currentPage.Permalink | absLangURL }}
 				<li>
-					<a href="{{ .URL }}">
-						{{ .Name }}
+					<a href="{{ .URL }}" >
+						<span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+							{{- .Name -}}
+						</span>
 					</a>
 				</li>
 				{{- end }}
