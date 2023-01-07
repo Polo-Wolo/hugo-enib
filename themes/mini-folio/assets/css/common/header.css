@@ -1,3 +1,12 @@
+.header {
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--entry);
+    background-color: var(--theme);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +19,11 @@
 
 .nav a {
     display: block;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo,
@@ -27,7 +41,8 @@
     font-weight: 700;
 }
 
-.logo a img, .logo a svg {
+.logo a img,
+.logo a svg {
     display: inline;
     vertical-align: middle;
     pointer-events: none;
@@ -39,15 +54,39 @@
 button#theme-toggle {
     font-size: 26px;
     margin: auto 4px;
+    width: 42px;
+    height: 23px;
+    background: var(--entry);
+    border-radius: 9999rem;
+    border: 1.5px solid var(--border);
+    position: relative;
 }
 
+button#theme-toggle #slider{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999rem;
+    transition: 0.3s;
+    background: var(--theme);
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-body.dark #moon {
+body.dark #slider {
+    left: -100%;
+    transform: translateX(calc(100% - 1px));
+}
+
+body.dark #sun {
     vertical-align: middle;
     display: none;
 }
 
-body:not(.dark) #sun {
+body:not(.dark) #moon {
     display: none;
 }
 
@@ -58,7 +97,7 @@ body:not(.dark) #sun {
     white-space: nowrap;
 }
 
-#menu li + li {
+#menu li+li {
     margin-inline-start: var(--gap);
 }
 
@@ -66,10 +105,16 @@ body:not(.dark) #sun {
     font-size: 16px;
     font-weight: 500;
 }
+
 #menu a:hover {
     color: var(--color);
 }
 
 #menu .active {
     color: var(--color);
+}
+
+#slider svg {
+    width: 14px;
+    height: 14px;
 }

@@ -1,10 +1,9 @@
-
 <header class="header">
 	<nav class="nav">
 		<div class="logo">
 			<a href="/">{{ .Site.Title }}</a>
 		</div>
-		
+
 		<div class="nav-container">
 			<!-- Nav links -->
 			<ul id="menu">
@@ -13,7 +12,7 @@
 				{{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
 				{{- $page_url:= $currentPage.Permalink | absLangURL }}
 				<li>
-					<a href="{{ .URL }}" >
+					<a href="{{ .URL }}">
 						<span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
 							{{- .Name -}}
 						</span>
@@ -22,15 +21,17 @@
 				{{- end }}
 			</ul>
 			<!-- Toggle theme button -->
-			<div class="logo-switches">
-				<button id="theme-toggle" accesskey="t" title="(Alt + T)">
-					<svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none"
-						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<button id="theme-toggle" accesskey="t" title="(Alt + T)">
+				<span id="slider">
+					<svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
 						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 					</svg>
-		
-					<svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none"
-						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+					<svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
 						<circle cx="12" cy="12" r="5"></circle>
 						<line x1="12" y1="1" x2="12" y2="3"></line>
 						<line x1="12" y1="21" x2="12" y2="23"></line>
@@ -41,8 +42,8 @@
 						<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
 						<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
 					</svg>
-				</button>
-			</div>
+				</span>
+			</button>
 		</div>
 	</nav>
 </header>
@@ -54,14 +55,14 @@
 		if (document.body.className.includes("dark")) {
 			document.body.classList.remove("dark");
 			localStorage.setItem("pref-theme", "light");
-			
+
 		} else {
 			document.body.classList.add("dark");
 			localStorage.setItem("pref-theme", "dark");
 		}
 	})
 	//Check Storage. Keep user preference on page reload
-	if (localStorage.getItem("pref-theme")==="dark") {
+	if (localStorage.getItem("pref-theme") === "dark") {
 		document.body.classList.add("dark");
 		console.log("onreload");
 	}

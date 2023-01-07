@@ -11,26 +11,26 @@
     --content-size: 14px;
 
     --theme: rgb(245, 245, 245);
-    --entry: rgb(255, 255, 255);
+    --entry: rgb(226, 226, 226);
     --primary: rgb(50, 50, 50);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
     --card-bg: rgb(255, 255, 255);
     --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
+    --border: rgb(158, 158, 158);
 }
 
 .dark {
     --theme: rgb(26, 26, 26);
-    --entry: rgb(46, 46, 51);
+    --entry: rgb(63, 63, 63);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
     --content: rgb(196, 196, 197);
     --card-bg: rgb(36, 36, 36);
     --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
+    --border: rgb(80, 80, 80);
 }
 
 
