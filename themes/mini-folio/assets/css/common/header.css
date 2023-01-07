@@ -62,6 +62,10 @@ button#theme-toggle {
     position: relative;
 }
 
+button#theme-toggle:hover {
+    border-color: var(--color);
+}
+
 button#theme-toggle #slider{
     position: absolute;
     width: 20px;
