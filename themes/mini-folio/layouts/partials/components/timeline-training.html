@@ -1,5 +1,7 @@
 {{- $list:= .list -}}
+{{- $context:= .context -}}
 
+{{ if .context.Site.Params.timeline_overflow }}
 <div class="timeline">
     <div class="spline">
         <span class="line small-line"></span>
@@ -13,6 +15,7 @@
     </div>
     <div class="card-fake"> </div>
 </div>
+{{ end }}
 
 {{ range $list }}
 <div class="timeline">
@@ -40,7 +43,7 @@
 </div>
 {{ end }}
 
-
+{{ if .context.Site.Params.timeline_overflow }}
 <div class="timeline">
     <div class="spline">
         <span class="line medium-line"></span>
@@ -54,3 +57,4 @@
     </div>
     <div class="card-fake"> </div>
 </div>
+{{ end }}

@@ -6,6 +6,8 @@ theme: mini-folio
 author: Paul Walczak
 
 
+
+
 menu:
   main:
     - identifier: home
@@ -26,6 +28,8 @@ menu:
       weight: 50
 
 Params:
+  timeline_overflow : false
+
   # Experience
   experience:
     #title: Custom title
@@ -114,7 +118,6 @@ Params:
           - English level = B1 Cambridge.
         city: Châteaulin
         country: FRANCE
-
 
   # Skills
   skills:

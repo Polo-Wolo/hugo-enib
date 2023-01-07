@@ -2,6 +2,10 @@ body {
     background-color: var(--theme);
 }
 
+h1 {
+    font-size: 30px;
+}
+
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -9,12 +13,14 @@ body {
     margin: auto;
     border: 0.2rem;
     border-color: black;
+    padding-top: 64px;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    padding: 0 var(--gap);
+    padding: calc(var(--gap)*3) var(--gap);
+    border-bottom: 1px solid var(--entry);
 }
 
 .container {
@@ -28,7 +34,6 @@ body {
 
 
 .section h1 {
-    margin-top: calc(var(--gap)*3);
     margin-bottom: var(--gap);
 }
 .section .card{
@@ -143,9 +148,7 @@ body {
 .small-line {
     height: 0.75rem;
 }
-.nav-container {
-    display: flex;
-}
+
 
 
 
