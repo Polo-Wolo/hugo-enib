@@ -1,7 +1,6 @@
 .header {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--entry);
-    background-color: var(--theme);
     position: fixed;
     width: 100%;
     z-index: 50;
@@ -19,6 +18,12 @@
 
 .nav a {
     display: block;
+}
+
+.blur {
+    -webkit-backdrop-filter: saturate(50%) blur(8px);
+    backdrop-filter: saturate(50%) blur(8px);
+    background: var(--theme-backdrop);
 }
 
 .nav-container {
@@ -66,7 +71,7 @@ button#theme-toggle:hover {
     border-color: var(--color);
 }
 
-button#theme-toggle #slider{
+button#theme-toggle #slider {
     position: absolute;
     width: 20px;
     height: 20px;

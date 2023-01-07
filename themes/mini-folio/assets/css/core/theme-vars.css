@@ -11,6 +11,7 @@
     --content-size: 14px;
 
     --theme: rgb(245, 245, 245);
+    --theme-backdrop: rgba(245, 245, 245, 0.7);
     --entry: rgb(226, 226, 226);
     --primary: rgb(50, 50, 50);
     --secondary: rgb(108, 108, 108);
@@ -23,6 +24,7 @@
 
 .dark {
     --theme: rgb(26, 26, 26);
+    --theme-backdrop: rgba(26, 26, 26, 0.7);
     --entry: rgb(63, 63, 63);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
