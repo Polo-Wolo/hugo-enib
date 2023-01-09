@@ -5,9 +5,6 @@ theme: mini-folio
 
 author: Paul Walczak
 
-
-
-
 menu:
   main:
     - identifier: home
@@ -29,18 +26,17 @@ menu:
 
 Params:
   timeline_overflow : false
+  repo_url : https://github.com/Polo-Wolo/hugo-enib
 
-  # Experience
+  # Sections
   experience:
     #title: Custom title
     enable: true
 
-  # Education
   education:
     title: Custom Education title
     enable: true
 
-  # Volunteering
   volunteering:
     #title: Custom title
     enable: true
@@ -67,7 +63,6 @@ Params:
         city: Mont Saint-Michel
         country: FRANCE
 
-  # Training
   training:
     #title: Custom title
     enable: true
@@ -119,7 +114,6 @@ Params:
         city: Châteaulin
         country: FRANCE
 
-  # Skills
   skills:
     #title: Custom title
     enable: true

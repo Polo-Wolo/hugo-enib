@@ -73,8 +73,9 @@ h1 {
     font-size: var(--title-size);
     font-weight: 600;
 }
-.icon {
-    color: white;
+
+.icon,
+.icon-link {
     display: block;
     height: 1.25rem;
     width: 1.25rem;
@@ -83,8 +84,16 @@ h1 {
     align-items: center;
 }
 
+.icon {
+    color: white;
+}
+
+.icon-link {
+    color: var(--secondary);
+}
+
 .icon-link:hover {
-    color: var(--color);
+    color: var(--primary);
     cursor: pointer;
 }
 .content {

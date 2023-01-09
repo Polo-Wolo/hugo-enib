@@ -29,12 +29,12 @@
 .nav-container {
     display: flex;
     align-items: center;
+    margin: auto var(--gap);
 }
 
-.logo,
-#menu {
+.logo {
     display: flex;
-    margin: auto var(--gap);
+    margin: auto auto auto var(--gap);
 }
 
 .logo {
@@ -58,7 +58,6 @@
 
 button#theme-toggle {
     display: block;
-    margin: auto 4px;
     width: 40px;
     height: 22px;
     background: var(--entry);
@@ -69,7 +68,7 @@ button#theme-toggle {
 }
 
 button#theme-toggle:hover {
-    border-color: var(--color);
+    border-color: var(--secondary);
 }
 
 button#theme-toggle #slider {
@@ -109,6 +108,7 @@ body:not(.dark) #moon {
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    display: flex;
 }
 
 #menu li+li {
@@ -131,4 +131,12 @@ body:not(.dark) #moon {
 #slider svg {
     width: 14px;
     height: 14px;
+}
+
+.separator {
+    width: 0px;
+    height: 24px;
+    display: block;
+    border-left: 1px solid var(--entry);
+    margin: 0 var(--gap);
 }
