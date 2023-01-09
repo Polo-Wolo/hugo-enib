@@ -1,6 +1,5 @@
 .header {
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--entry);
     position: fixed;
     width: 100%;
     z-index: 50;
@@ -29,16 +28,21 @@
 .nav-container {
     display: flex;
     align-items: center;
-    margin: auto var(--gap);
+    margin: auto 15px;
 }
 
 .logo {
     display: flex;
-    margin: auto auto auto var(--gap);
+    margin: auto auto auto 15px;
+    flex-wrap: inherit;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-.logo {
-    flex-wrap: inherit;
+.logo:hover {
+    opacity: 75%;
 }
 
 .logo a {
@@ -65,6 +69,10 @@ button#theme-toggle {
     border: 1px solid var(--border);
     position: relative;
     flex-shrink: 0;
+    transition-property: border-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 button#theme-toggle:hover {
@@ -116,8 +124,12 @@ body:not(.dark) #moon {
 }
 
 #menu a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 #menu a:hover {

@@ -90,6 +90,10 @@ h1 {
 
 .icon-link {
     color: var(--secondary);
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 .icon-link:hover {
