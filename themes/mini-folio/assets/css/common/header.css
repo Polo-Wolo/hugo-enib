@@ -57,14 +57,15 @@
 }
 
 button#theme-toggle {
-    font-size: 26px;
+    display: block;
     margin: auto 4px;
-    width: 42px;
-    height: 23px;
+    width: 40px;
+    height: 22px;
     background: var(--entry);
     border-radius: 9999rem;
-    border: 1.5px solid var(--border);
+    border: 1px solid var(--border);
     position: relative;
+    flex-shrink: 0;
 }
 
 button#theme-toggle:hover {
@@ -73,21 +74,25 @@ button#theme-toggle:hover {
 
 button#theme-toggle #slider {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 9999rem;
-    transition: 0.3s;
-    background: var(--theme);
-    left: 0px;
-    top: 0px;
     display: flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999rem;
+    transition: 0.25s;
+    background: var(--theme);
+    left: 1px;
+    top: 1px;
     justify-content: center;
     align-items: center;
 }
 
-body.dark #slider {
-    left: -100%;
-    transform: translateX(calc(100% - 1px));
+body.dark span#slider {
+    transform: translateX(100%);
+}
+
+body.dark span#slider svg {
+    width: 12px;
+    height: 12px;
 }
 
 body.dark #sun {
