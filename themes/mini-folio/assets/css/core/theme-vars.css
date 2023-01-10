@@ -6,7 +6,7 @@
     --main-width: 768px;
     --header-height: 60px;
     --footer-height: 60px;
-    --radius: 12px;
+    --radius: 10px;
     --title-size: 16px;
     --content-size: 14px;
 
@@ -18,7 +18,7 @@
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
     --card-bg: rgb(255, 255, 255);
-    --code-bg: rgb(245, 245, 245);
+    --code-bg: rgb(41, 45, 62);
     --border: rgb(158, 158, 158);
 }
 

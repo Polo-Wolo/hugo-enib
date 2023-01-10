@@ -1,6 +1,12 @@
 {{ define "main" }}
 
 <div>single.html</div>
-<div>{{ .Title }}</div>
+
+
+{{- if .Content }}
+<div class="post-content">
+    {{ .Content }}
+</div>
+{{- end }}
 
 {{ end }}
