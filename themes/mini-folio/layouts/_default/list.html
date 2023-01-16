@@ -1,12 +1,10 @@
 {{ define "main" }}
     list.html
-    <ul>
-        {{ range (.Pages.ByParam "start-date").Reverse }}
-            <li>
-                <a href="{{.RelPermalink}}">
-                    {{ .Title }}
-                </a>
-            </li>
-        {{ end }}
-    </ul>
+    {{ range (.Pages.ByParam "start-date").Reverse }}
+        <a href="{{.RelPermalink}}">
+            <article class="card">
+                {{ .Title }}
+            </article>
+        </a>
+    {{ end }}
 {{ end }}
