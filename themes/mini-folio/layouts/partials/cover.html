@@ -1,0 +1,7 @@
+{{- with .context -}}
+{{- $template := "img/template.jpg" -}}
+{{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+<figure class="entry-cover">
+    <img loading="lazy" src="{{ (.Params.cover.image) | default $template | absURL }}" alt="{{ $alt }}">
+</figure>
+{{- end -}}

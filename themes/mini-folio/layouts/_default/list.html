@@ -1,10 +1,20 @@
 {{ define "main" }}
-    list.html
+list.html
+<div class="list">
     {{ range (.Pages.ByParam "start-date").Reverse }}
         <a href="{{.RelPermalink}}">
-            <article class="card">
-                {{ .Title }}
+            <article class="card card-row">
+                {{- partial "cover.html" (dict "context" . ) }}
+                <div class="card-overflow">
+                    <span class="card-title">
+                        {{ .Title }}
+                    </span>
+                    <div class="content">
+                        {{ .Description }}
+                    </div>
+                </div>
             </article>
         </a>
     {{ end }}
+</div>
 {{ end }}
