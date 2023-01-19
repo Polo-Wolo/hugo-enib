@@ -1,9 +1,10 @@
 {{ define "main" }}
 list.html
 <div class="list">
+    <h1>{{ .Page.Title }}</h1>
     {{ range (.Pages.ByParam "start-date").Reverse }}
         <a href="{{.RelPermalink}}">
-            <article class="card card-row">
+            <article class="card card-row card-hover">  
                 {{- partial "cover.html" (dict "context" . ) }}
                 <div class="card-overflow">
                     <span class="card-title">

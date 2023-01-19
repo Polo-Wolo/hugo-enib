@@ -54,6 +54,17 @@ h1 {
     flex-grow: 1;
 }
 
+.card-hover {
+    outline: 0px solid var(--color);
+    transition-property: outline;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+}
+
+.card-hover:hover {
+    outline-width: 3px;
+}
+
 .card .color-circle {
     display: flex;
     justify-content: center;
@@ -73,6 +84,7 @@ h1 {
 .card-title {
     font-size: var(--title-size);
     font-weight: 600;
+    margin-left: calc(var(--gap)/2);
 }
 
 .icon,
@@ -103,6 +115,7 @@ h1 {
 }
 
 .content {
+    text-align: justify;
     font-size: var(--content-size);
     font-weight: 300;
 }
@@ -192,6 +205,10 @@ h1 {
     overflow: hidden;
 }
 
+.list {
+    padding: calc(var(--gap)*3) 0;
+}
+
 .list .card {
     max-height: 10rem;
 }
@@ -205,5 +222,13 @@ h1 {
     .card {
         width: 100%;
         flex-grow: 1;
+    }
+
+    .entry-cover {
+        width: 25%;
+    }
+    .list .card {
+        max-height: 12rem;
+        border-radius: 0px;
     }
 }

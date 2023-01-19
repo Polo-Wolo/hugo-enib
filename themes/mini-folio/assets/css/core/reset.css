@@ -52,7 +52,9 @@ h6 {
     line-height: 1.2;
 }
 
-h1,
+h1 {
+    margin-bottom: var(--gap);
+}
 h2,
 h3,
 h4,
