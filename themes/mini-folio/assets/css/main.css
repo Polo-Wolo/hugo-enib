@@ -239,11 +239,14 @@ pre {
     top: 8px;
     right: 8px;
     color:rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
     padding: 2px 5px;
     font-size: 12px;
     user-select: none;
+}
+
+.copy-code:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 div.highlight:hover .copy-code,
