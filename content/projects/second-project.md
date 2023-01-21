@@ -20,7 +20,7 @@ end-date:   2022-11-03
 
 * Form 1: `if`
 
-```python
+```bash
 if name == 'Homer':
     print('Hi, Homer.')
 ```

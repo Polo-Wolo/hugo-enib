@@ -217,6 +217,45 @@ h1 {
     margin: 0 0 var(--gap) 0;
 }
 
+div.highlight,
+pre {
+    position: relative;
+}
+
+.lang-code {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color:rgba(255, 255, 255, 0.3);
+    padding: 2px 5px;
+    font-size: 12px;
+    user-select: none;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color:rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    user-select: none;
+}
+
+div.highlight:hover .copy-code,
+pre:hover .copy-code {
+    display: flex;
+}
+
+div.highlight:hover .lang-code,
+pre:hover .lang-code {
+    display: none;
+}
+
 
 @media screen and (max-width: 768px) {
     .card {

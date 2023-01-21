@@ -24,6 +24,12 @@ menu:
       url: /contact/
       weight: 50
 
+markup:
+  highlight:
+    codeFences: true
+    noClasses: true
+    style: monokai        # TODO : find a way to change code theme
+
 Params:
   timeline_overflow : false
   repo_url : https://github.com/Polo-Wolo/hugo-enib
