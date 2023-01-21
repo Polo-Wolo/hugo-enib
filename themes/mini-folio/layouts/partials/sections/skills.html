@@ -3,7 +3,7 @@
 	<h1>{{ .Site.Params.skills.title | default "Skills" }}</h1>
 	<div class="container">
 		{{ range .Site.Params.skills.types }}
-		<div class="card card-row">
+		<div class="card card-padding card-row">
 			<span class="color-circle">
 				<!-- icon -->
 				{{ $name := .svg }}

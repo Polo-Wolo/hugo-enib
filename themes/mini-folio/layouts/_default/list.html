@@ -3,19 +3,30 @@ list.html
 <div class="list">
     <h1>{{ .Page.Title }}</h1>
     {{ range (.Pages.ByParam "start-date").Reverse }}
-        <a href="{{.RelPermalink}}">
-            <article class="card card-row card-hover">  
-                {{- partial "cover.html" (dict "context" . ) }}
-                <div class="card-overflow">
-                    <span class="card-title">
-                        {{ .Title }}
-                    </span>
-                    <div class="content">
-                        {{ .Description }}
-                    </div>
-                </div>
-            </article>
-        </a>
-    {{ end }}
+    <!-- Variables-->
+    {{- $template := "img/template.jpg" -}}
+    {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+    <a href="{{.RelPermalink}}">
+        <article class="card card-hover">
+            <figure class="entry-cover">
+                <img loading="lazy" src="{{ (.Params.cover.image) | default $template | absURL }}" alt="{{ $alt }}">
+            </figure>
+            <div class="card-padding">
+                <span class="card-title">{{ .Title }}</span>
+                <ul class="tags-row">
+                    {{ range .Params.tags }}
+                    <li class="tag">
+                        {{.}}
+                    </li>
+                    {{ end }}
+                </ul>
+                <span class="content">
+                    {{ .Description }}
+                </span>
+            </div>
+</div>
+</article>
+</a>
+{{ end }}
 </div>
 {{ end }}

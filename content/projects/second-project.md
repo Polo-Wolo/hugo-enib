@@ -4,6 +4,9 @@ date: 2022-12-29T21:33:05+01:00
 draft: false
 
 description: 
+cover:
+    alt: This is my 2nd alt
+
 
 
 start-date: 2012-02-13
