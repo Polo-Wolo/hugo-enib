@@ -7,7 +7,7 @@ cover:
     image: img/profile_picture.jpeg
     alt: This is my alt
 
-description: Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé
+description: Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé. Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé.Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé.
 
 tags: [hugo,content,static site generator]
 

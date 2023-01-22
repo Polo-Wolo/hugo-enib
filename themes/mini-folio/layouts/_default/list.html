@@ -1,32 +1,33 @@
 {{ define "main" }}
 list.html
-<div class="list">
+<section class="section" id="projects">
     <h1>{{ .Page.Title }}</h1>
-    {{ range (.Pages.ByParam "start-date").Reverse }}
-    <!-- Variables-->
-    {{- $template := "img/template.jpg" -}}
-    {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
-    <a href="{{.RelPermalink}}">
-        <article class="card card-hover">
-            <figure class="entry-cover">
-                <img loading="lazy" src="{{ (.Params.cover.image) | default $template | absURL }}" alt="{{ $alt }}">
-            </figure>
-            <div class="card-padding">
-                <span class="card-title">{{ .Title }}</span>
-                <ul class="tags-row">
-                    {{ range .Params.tags }}
-                    <li class="tag">
-                        {{.}}
-                    </li>
-                    {{ end }}
-                </ul>
-                <span class="content">
-                    {{ .Description }}
-                </span>
-            </div>
-</div>
-</article>
-</a>
-{{ end }}
-</div>
+    <div class="grid">
+        {{ range (.Pages.ByParam "start-date").Reverse }}
+        <!-- Variables-->
+        {{- $template := "img/template.jpg" -}}
+        {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+        <a class="grid-elem-width" href="{{.RelPermalink}}">
+            <article class="card card-hover">
+                <figure class="entry-cover">
+                    <img loading="lazy" src="{{ (.Params.cover.image) | default $template | absURL }}" alt="{{ $alt }}">
+                </figure>
+                <div class="card-padding">
+                    <ul class="tags-row tags-row-margin">
+                        {{ range .Params.tags }}
+                        <li class="tag">
+                            {{.}}
+                        </li>
+                        {{ end }}
+                    </ul>
+                    <div class="card-title">{{ .Title }}</div>
+                    <div class="content content-overflow">
+                        {{ .Description | default "You forgot to write your project description !"}}
+                    </div>
+                </div>
+            </article>
+        </a>
+        {{ end }}
+    </div>
+</section>
 {{ end }}

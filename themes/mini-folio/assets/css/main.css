@@ -127,6 +127,12 @@ h1 {
     margin-left: calc(var(--gap)/2);
 }
 
+.content-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height:calc((var(--content-size) + 8px)*6);
+}
+
 .timeline {
     display: flex;
     width: 100%;
@@ -189,7 +195,7 @@ h1 {
 
 .entry-cover {
     width: auto;
-    height: 40%;
+    height: 12.5rem;
     flex-shrink: 0;
     text-align: center;
 }
@@ -211,6 +217,10 @@ h1 {
     justify-content: left;
 }
 
+.tags-row-margin {
+    margin: 0 0 calc(var(--gap)/2) 0;
+}
+
 .tags-row li+li {
     margin-inline-start: 8px;
 }
@@ -227,16 +237,17 @@ h1 {
     overflow: hidden;
 }
 
-.list {
-    padding: calc(var(--gap)*3) 0;
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.list .card {
-    height: 30rem;
-    width: 25rem;
+#projects .grid-elem-width {
+    margin: calc(var(--gap)/2) var(--gap);
 }
 
-.list article {
+#projects article {
     margin: 0 0 var(--gap) 0;
 }
 
@@ -289,10 +300,13 @@ pre:hover .lang-code {
     }
 
     .entry-cover {
-        width: 25%;
+        width: 100%;
     }
     .list .card {
-        max-height: 12rem;
+        width: 100%;
         border-radius: 0px;
+    }
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
