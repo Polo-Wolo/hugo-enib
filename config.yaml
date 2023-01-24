@@ -45,7 +45,7 @@ Params:
 
   volunteering:
     #title: Custom title
-    enable: true
+    enable: false
     list:
       - organisation: Nous Existons
         logo_path:

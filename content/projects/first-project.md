@@ -13,10 +13,14 @@ tags: [hugo,content,static site generator]
 
 start-date: 2013-02-13
 end-date:   2020-11-03
+
+math: true
 ---
 
 # This is my first project
 
 This is my first project content
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 ![Example image](/img/profile_picture.jpeg)
