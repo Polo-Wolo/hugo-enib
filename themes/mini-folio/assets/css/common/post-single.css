@@ -223,7 +223,8 @@
 }
 
 .post-footer {
-    margin-top: 56px;
+    margin-top: 64px;
+    padding: 0 var(--gap);
 }
 
 .paginav {
