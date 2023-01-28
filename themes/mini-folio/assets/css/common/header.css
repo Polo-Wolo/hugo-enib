@@ -152,3 +152,9 @@ body:not(.dark) #moon {
     border-left: 1px solid var(--entry);
     margin: 0 var(--gap);
 }
+
+@media screen and (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+}
