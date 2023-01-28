@@ -1,0 +1,19 @@
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if and (gt (len $pages) 1) (in $pages . ) }}
+<nav class="paginav">
+  {{- with $pages.Next . }}
+  <a class="prev" href="{{ .Params.link | default .Permalink }}">
+    <span class="pagi">« prev</span>
+    <br>
+    <span class="title">{{- .Name -}}</span>
+  </a>
+  {{- end }}
+  {{- with $pages.Prev . }}
+  <a class="next" href="{{ .Params.link | default .Permalink }}">
+    <span class="pagi"> next »</span>
+    <br>
+    <span class="title">{{- .Name -}}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}

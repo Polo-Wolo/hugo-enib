@@ -222,6 +222,68 @@
     font-weight: normal;
 }
 
+.post-footer {
+    margin-top: 56px;
+}
+
+.paginav {
+    border-radius: var(--radius);
+    background: var(--card-bg);
+}
+
+.paginav a:hover {
+    background: var(--tertiary);
+}
+
+.paginav {
+    margin: 10px 0;
+    display: flex;
+    line-height: 30px;
+    border-radius: var(--radius);
+}
+
+.paginav a {
+    padding-inline-start: 14px;
+    padding-inline-end: 14px;
+    border-radius: var(--radius);
+}
+
+.paginav .title,
+.paginav .pagi
+{
+    letter-spacing: 1px;
+    color: var(--secondary);
+}
+
+.paginav .title {
+    font-size: var(--title-size);
+    color: var(--primary);
+}
+
+.paginav .pagi {
+    font-size: var(--content-size);
+}
+
+.paginav .prev,
+.paginav .next {
+    width: 50%;
+}
+
+.paginav .next {
+    margin-inline-start: auto;
+    text-align: right;
+}
+
+[dir="rtl"] .paginav .next {
+    text-align: left;
+}
+
+img.in-text {
+    display: inline;
+    margin: auto;
+}
+
+
 @media screen and (max-width: 768px) {
     .post-content pre code {
         border-radius: 0px;

@@ -9,7 +9,7 @@ cover:
 
 description: Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé. Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé.Projet scolaire dont le but est de manipulé le multi-task sur STM32 afin de pouvoir asservir les moteurs tout en analysant les données des capteurs. Merci pour ce super projet ! On s'est bien amusé.
 
-tags: [hugo,content,static site generator]
+tags: [TODO,content,static site generator]
 
 start-date: 2013-02-13
 end-date:   2020-11-03

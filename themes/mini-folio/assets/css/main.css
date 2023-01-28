@@ -228,8 +228,14 @@ h1 {
 .tag {
     background-color: var(--tertiary);
     font-size: var(--content-size);
-    padding: 0 8px;
+    padding: 3px 7px;
     border-radius: 7px;
+    border: 1px solid transparent;
+}
+
+.tag:hover {
+    border: 1px solid var(--border);
+    background-color: transparent;
 }
 
 .card-overflow {

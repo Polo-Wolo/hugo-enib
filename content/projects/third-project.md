@@ -10,9 +10,3 @@ link: https://youtu.be/mKhQwfiDAfs?t=0
 start-date: 2010-02-13
 end-date:   2020-11-03
 ---
-
-# This is my first project
-
-This is my firdt project content
-
-![Example image](/img/profile_picture.jpeg)

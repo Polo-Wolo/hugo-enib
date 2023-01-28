@@ -32,6 +32,7 @@ markup:
 
 Params:
   timeline_overflow : false
+  ShowPostNavLinks : true
   repo_url : https://github.com/Polo-Wolo/hugo-enib
 
   # Sections
@@ -53,7 +54,7 @@ Params:
         content:
           - Scientific mediation that aims to raise awareness of the sensitivity and fragility of the seabed. The project is suported by ISblue, ISblueHUB and Ifremer.
         city: Brest
-        country: FRANCE
+        country: FRANCE 
       - organisation: Cordées de la Réussite
         logo_path:
         date: 2021-2022

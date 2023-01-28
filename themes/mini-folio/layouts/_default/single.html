@@ -1,12 +1,21 @@
 {{ define "main" }}
 
-<div>single.html</div>
-
-
 {{- if .Content }}
 <div class="post-content">
     {{ .Content }}
 </div>
 {{- end }}
+
+<footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="tags-row">
+        {{- range ($.GetTerms $tags) }}
+            <li><a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+        {{- partial "post_nav_links.html" . }}
+    {{- end }}
+</footer>
 
 {{ end }}
