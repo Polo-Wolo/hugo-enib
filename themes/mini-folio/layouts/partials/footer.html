@@ -26,12 +26,12 @@
 
         copybutton.classList.add('copy-code');
 
-        copybutton.innerHTML = '{{- "code_copy" | default "copy" }}';
+        copybutton.innerHTML = '{{- "copy" }}';
 
         function copyingDone() {
-            copybutton.innerHTML = '{{- "code_copied" | default "copied" }}';
+            copybutton.innerHTML = '{{- "copied" }}';
             setTimeout(() => {
-                copybutton.innerHTML = '{{- "code_copy" | default "copy" }}';
+                copybutton.innerHTML = '{{- "copy" }}';
             }, 2000);
         }
 
