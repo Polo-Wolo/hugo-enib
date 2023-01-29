@@ -5,6 +5,11 @@
 		</div>
 
 		<div class="nav-container">
+			<button onclick="toggleMobilePanel()" id="burger">
+				<span class="burger-elem"></span>
+				<span class="burger-elem"></span>
+				<span class="burger-elem"></span>
+			</button>
 			<!-- Nav links -->
 			<ul id="menu">
 				{{- $currentPage := . }}
@@ -57,6 +62,7 @@
 
 
 <script>
+	console.log(mobilePanelOn);
 	/* toggle theme handler */
 	document.getElementById("theme-toggle").addEventListener("click", () => {
 		if (document.body.className.includes("dark")) {
@@ -74,12 +80,42 @@
 	}
 
 	/* toggle mobilenav handler */
-	function myFunction() {
+	var mobilePanelOn = false;
+	var burger_elems = document.getElementsByClassName("burger-elem");
+
+	function toggleMobilePanel() {
 		var menu = document.getElementById("menu");
-		if (menu.style.display === "block") {
-			menu.style.display = "none";
+		var burger = document.getElementById("burger");
+		if (mobilePanelOn) {
+			// hide panel
+			menu.style.transform = "translate(0, -100%)";
+			for (var i = 0; i < burger_elems.length; i++) {
+                switch (i) {
+                    case (0):
+					burger_elems[0].classList.remove("burger-elem-active1");
+                    case (1):
+					burger_elems[1].classList.remove("burger-elem-active2");
+                    case (2):
+					burger_elems[2].classList.remove("burger-elem-active3");
+                    default: break;
+                }
+            }
 		} else {
-			menu.style.display = "block";
+			// show panel
+			menu.style.transform = "translate(0, 0%)";
+			for (var i = 0; i < burger_elems.length; i++) {
+                switch (i) {
+                    case (0):
+                        burger_elems[0].classList.add("burger-elem-active1");
+                    case (1):
+                        burger_elems[1].classList.add("burger-elem-active2");
+                    case (2):
+                        burger_elems[2].classList.add("burger-elem-active3");
+                    default: break;
+                }
+            }
 		}
+		console.log(mobilePanelOn);
+		mobilePanelOn = !mobilePanelOn;
 	}
 </script>

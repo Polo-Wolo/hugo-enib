@@ -19,10 +19,17 @@ h1 {
 .section {
     display: flex;
     flex-direction: column;
-    padding: calc(var(--gap)*3) var(--gap);
-    border-bottom: 1px solid var(--entry);
+    margin: 0 var(--gap);
+    padding: calc(var(--gap)*3) 0;
 }
 
+.section {
+    border-bottom: 1px solid var(--border);
+}
+
+.section:last-child {
+    border-bottom: transparent;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -100,7 +107,7 @@ h1 {
     align-items: center;
 }
 
-.icon {
+.icon-white {
     color: white;
 }
 

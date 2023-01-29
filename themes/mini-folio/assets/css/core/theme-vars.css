@@ -11,29 +11,29 @@
     --content-size: 14px;
 
 
-    --theme: rgb(245, 245, 245);
-    --theme-backdrop: rgba(245, 245, 245, 0.7);
+    --theme: rgb(255, 255, 255);
+    --theme-backdrop: rgba(255, 255, 255, 0.7);
     --entry: rgb(226, 226, 226);
-    --primary: rgb(50, 50, 50);
+    --primary: rgb(33, 53, 71);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
-    --card-bg: rgb(255, 255, 255);
+    --card-bg: rgb(249, 249, 249);
     --code-bg: rgb(41, 45, 62);
-    --border: rgb(158, 158, 158);
+    --border: rgba(60, 60, 60, 0.12);
 }
 
 .dark {
-    --theme: rgb(26, 26, 26);
-    --theme-backdrop: rgba(26, 26, 26, 0.7);
+    --theme: rgb(36, 36, 36);
+    --theme-backdrop: rgba(36, 36, 36, 0.7);
     --entry: rgb(63, 63, 63);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
     --content: rgb(196, 196, 197);
-    --card-bg: rgb(36, 36, 36);
-    --code-bg: rgb(36, 36, 36);
-    --border: rgb(80, 80, 80);
+    --card-bg: rgb(26, 26, 26);
+    --code-bg: rgb(26, 26, 26);
+    --border: rgba(84, 84, 84, 0.5);
 }
 
 
