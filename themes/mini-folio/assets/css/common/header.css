@@ -159,11 +159,11 @@ body:not(.dark) #moon {
 #burger {
     /* justify-between w-6 h-5 transform transition-all duration-300 origin-center overflow-hidden */
     display: none;
-    width: 1.7rem;
-    height: 1.45rem;
+    width: 1.5rem;
+    height: 1.25rem;
     justify-content: space-between;
-    padding: 0.1rem;
     overflow: hidden;
+    transform-origin: center;
 }
 
 .burger-elem {
@@ -175,18 +175,18 @@ body:not(.dark) #moon {
     transition-duration: 0.25s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    transform-origin: top left;
+    transform-origin: left;
 }
 .burger-elem-active1 {
-    transform: translateY(-25%) translateX(0.15rem) rotate(45deg);
-    width: 1.72rem;
+    transform: translateY(-25%) translateX(2px) rotate(45deg);
+    width: 1.71rem;
 }
 .burger-elem-active2 {
     transform: translate(-150%);
 }
 .burger-elem-active3 {
-    transform: translateY(25%) translateX(0.15rem) rotate(-45deg);
-    width: 1.72rem;
+    transform: translateY(25%) translateX(2px) rotate(-45deg);
+    width: 1.71rem;
 }
 /*
 .burger-elem-active1 {

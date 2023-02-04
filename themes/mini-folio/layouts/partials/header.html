@@ -33,7 +33,7 @@
 							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 						</svg>
-	
+
 						<svg id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
 							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 							<circle cx="12" cy="12" r="5"></circle>
@@ -62,7 +62,6 @@
 
 
 <script>
-	console.log(mobilePanelOn);
 	/* toggle theme handler */
 	document.getElementById("theme-toggle").addEventListener("click", () => {
 		if (document.body.className.includes("dark")) {
@@ -82,40 +81,58 @@
 	/* toggle mobilenav handler */
 	var mobilePanelOn = false;
 	var burger_elems = document.getElementsByClassName("burger-elem");
+	var burger = document.getElementById("burger");
 
+	
+	function burgerBar() {
+		for (var i = 0; i < burger_elems.length; i++) {
+			switch (i) {
+				case (0):
+					burger_elems[0].classList.remove("burger-elem-active1");
+				case (1):
+					burger_elems[1].classList.remove("burger-elem-active2");
+				case (2):
+					burger_elems[2].classList.remove("burger-elem-active3");
+				default: break;
+			}
+		}
+	}
+
+	function burgerCross() {
+		for (var i = 0; i < burger_elems.length; i++) {
+			switch (i) {
+				case (0):
+					burger_elems[0].classList.add("burger-elem-active1");
+				case (1):
+					burger_elems[1].classList.add("burger-elem-active2");
+					case (2):
+					burger_elems[2].classList.add("burger-elem-active3");
+				default: break;
+			}
+		}
+	}
+
+	function closeMobilePanel() {
+		console.log("close");
+		menu.style.transform = "translate(0, -100%)";
+		burgerBar();
+		mobilePanelOn = !mobilePanelOn;
+	}
+
+	function openMobilePanel() {
+		console.log("open");
+		menu.style.transform = "translate(0, 0%)";
+		burgerCross();
+		mobilePanelOn = !mobilePanelOn;
+	}
 	function toggleMobilePanel() {
 		var menu = document.getElementById("menu");
-		var burger = document.getElementById("burger");
 		if (mobilePanelOn) {
 			// hide panel
-			menu.style.transform = "translate(0, -100%)";
-			for (var i = 0; i < burger_elems.length; i++) {
-                switch (i) {
-                    case (0):
-					burger_elems[0].classList.remove("burger-elem-active1");
-                    case (1):
-					burger_elems[1].classList.remove("burger-elem-active2");
-                    case (2):
-					burger_elems[2].classList.remove("burger-elem-active3");
-                    default: break;
-                }
-            }
+			closeMobilePanel();
 		} else {
 			// show panel
-			menu.style.transform = "translate(0, 0%)";
-			for (var i = 0; i < burger_elems.length; i++) {
-                switch (i) {
-                    case (0):
-                        burger_elems[0].classList.add("burger-elem-active1");
-                    case (1):
-                        burger_elems[1].classList.add("burger-elem-active2");
-                    case (2):
-                        burger_elems[2].classList.add("burger-elem-active3");
-                    default: break;
-                }
-            }
+			openMobilePanel();
 		}
-		console.log(mobilePanelOn);
-		mobilePanelOn = !mobilePanelOn;
 	}
 </script>
