@@ -56,6 +56,8 @@
 				</a>
 			</ul>
 		</div>
+		<div id="click-outside">
+		</div>	
 	</nav>
 </header>
 
@@ -82,6 +84,7 @@
 	var mobilePanelOn = false;
 	var burger_elems = document.getElementsByClassName("burger-elem");
 	var burger = document.getElementById("burger");
+	var click_outside = document.getElementById("click-outside");
 
 	
 	function burgerBar() {
@@ -115,6 +118,7 @@
 	function closeMobilePanel() {
 		console.log("close");
 		menu.style.transform = "translate(0, -100%)";
+		click_outside.style.display = "none";
 		burgerBar();
 		mobilePanelOn = !mobilePanelOn;
 	}
@@ -122,6 +126,7 @@
 	function openMobilePanel() {
 		console.log("open");
 		menu.style.transform = "translate(0, 0%)";
+		click_outside.style.display = "block";
 		burgerCross();
 		mobilePanelOn = !mobilePanelOn;
 	}
@@ -135,4 +140,5 @@
 			openMobilePanel();
 		}
 	}
+	document.getElementById("click-outside").addEventListener("click", closeMobilePanel); 
 </script>

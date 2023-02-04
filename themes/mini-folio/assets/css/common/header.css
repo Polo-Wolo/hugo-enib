@@ -177,17 +177,31 @@ body:not(.dark) #moon {
     transition-delay: 0s;
     transform-origin: left;
 }
+
 .burger-elem-active1 {
     transform: translateY(-25%) translateX(2px) rotate(45deg);
     width: 1.71rem;
 }
+
 .burger-elem-active2 {
     transform: translate(-150%);
 }
+
 .burger-elem-active3 {
     transform: translateY(25%) translateX(2px) rotate(-45deg);
     width: 1.71rem;
 }
+
+#click-outside {
+    width: 100%;
+    height: 999px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 35%;
+    z-index: -10;
+}
+
 /*
 .burger-elem-active1 {
     @apply rotate-45 translate-x-[2px] -translate-y-1/2 w-7;
@@ -204,6 +218,7 @@ body:not(.dark) #moon {
     .header {
         backdrop-filter: none;
     }
+
     #menu {
         flex-direction: column;
         position: absolute;
@@ -220,19 +235,24 @@ body:not(.dark) #moon {
         transition-timing-function: ease;
         transition-delay: 0s;
     }
+
     #menu a {
         font-size: var(--title-size);
     }
+
     .nav {
         border-bottom: 1px solid var(--border);
     }
+
     #burger {
         display: flex;
         flex-direction: column;
     }
+
     .separator {
         display: none;
     }
+
     .blur {
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
