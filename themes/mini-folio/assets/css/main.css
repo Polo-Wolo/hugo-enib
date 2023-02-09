@@ -65,14 +65,15 @@ h1 {
 }
 
 .card-hover {
-    outline: 0px solid var(--color);
-    transition-property: outline;
+    border:  3px solid transparent;
+    border-radius: 11px;
+    transition-property: border;
     transition-duration: 0.1s;
     transition-delay: 0s;
 }
 
 .card-hover:hover {
-    outline-width: 3px;
+    border-color: var(--color);
 }
 
 .card .color-circle {
