@@ -229,12 +229,9 @@
 
 .paginav {
     border-radius: var(--radius);
-    background: var(--card-bg);
 }
 
-.paginav a:hover {
-    background: var(--tertiary);
-}
+
 
 .paginav {
     margin: 10px 0;
@@ -259,6 +256,10 @@
 .paginav .title {
     font-size: var(--title-size);
     color: var(--primary);
+}
+
+.paginav .title a {
+    color: var(--color);
 }
 
 .paginav .pagi {
