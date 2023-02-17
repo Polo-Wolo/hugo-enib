@@ -31,6 +31,12 @@ markup:
     style: monokai        # TODO : find a way to change code theme
 
 Params:
+  logo:
+    enable: true
+    #path: /img/profile_picture.jpeg
+    #url: https://polo-wolo.github.io/portfolio/
+
+  website_logo : true
   timeline_overflow : false
   ShowPostNavLinks : true
   repo_url : https://github.com/Polo-Wolo/hugo-enib

@@ -1,7 +1,16 @@
 <header class="header">
 	<nav class="nav blur">
 		<div class="logo">
-			<a href="https://www.enib.fr"><img src="/img/logo.jpeg" ></a>
+			{{ if .Site.Params.logo.enable }}
+				{{ $logo_url:= "/" }}
+				{{ $logo_path := .Site.Params.logo.path | default "/img/enib.png" }}
+				{{ if eq $logo_path "/img/enib.png" }}
+					{{ $logo_url = "https://www.enib.fr" }}
+				{{ else }}
+					{{ $logo_url = .Site.Params.logo.url | default "/" }}
+				{{ end }}
+				<a href="{{ $logo_url }}"><img src="{{ $logo_path }}" ></a>
+			{{ end }}
 			<a href="/">{{ .Site.Title }}</a>
 		</div>
 
