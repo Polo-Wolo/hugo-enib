@@ -9,7 +9,7 @@
 				{{ else }}
 					{{ $logo_url = .Site.Params.logo.url | default "/" }}
 				{{ end }}
-				<a href="{{ $logo_url }}"><img src="{{ $logo_path }}" ></a>
+				<a href="{{ $logo_url }}" {{ if not (eq $logo_url "/") }} target="_blank" {{ end }}><img src="{{ $logo_path }}" ></a>
 			{{ end }}
 			<a href="/">{{ .Site.Title }}</a>
 		</div>

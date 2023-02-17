@@ -54,12 +54,11 @@
 .logo a svg {
     display: inline;
     vertical-align: middle;
-    pointer-events: none;
-    transform: translate(0, -10%);
-    border-radius: 6px;
-    margin-inline-end: 8px;
     height: 35px;
-    padding-right: 20px;
+    margin-right: 20px;
+}
+.logo a img {
+    border-radius: var(--radius);
 }
 
 button#theme-toggle {
