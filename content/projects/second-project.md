@@ -11,7 +11,12 @@ tags: [TODO, noTag]
 
 start-date: 2012-02-13
 end-date:   2022-11-03
+
+math: true
 ---
+# Latex test
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 # Basics
 
