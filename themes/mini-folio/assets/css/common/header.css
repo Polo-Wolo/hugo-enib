@@ -134,6 +134,7 @@ body:not(.dark) #moon {
     transition-duration: 0.25s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    margin: 0 auto;
 }
 
 #menu a:hover {
@@ -203,17 +204,20 @@ body:not(.dark) #moon {
     z-index: -10;
 }
 
-/*
-.burger-elem-active1 {
-    @apply rotate-45 translate-x-[2px] -translate-y-1/2 w-7;
+.toggle-mobile-container {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    font-size: var(--content-size);
+    margin: 0;
 }
-.burger-elem-active2 {
-    @apply -translate-x-10;
+.toggle-mobile-container span {
+    display: none;
 }
-.burger-elem-active3 {
-    @apply -rotate-45 translate-x-[2px] translate-y-1/2 w-7;
-}
-*/
 
 @media screen and (max-width: 768px) {
     .header {
@@ -241,6 +245,10 @@ body:not(.dark) #moon {
         font-size: var(--title-size);
     }
 
+    #menu li+li {
+        margin-inline-start: 0;
+    }
+
     .nav {
         border-bottom: 1px solid var(--border);
     }
@@ -258,5 +266,12 @@ body:not(.dark) #moon {
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
         background: var(--theme);
+    }
+    .toggle-mobile-container {
+        padding: var(--gap);
+        margin: var(--gap) 0;
+    }
+    .toggle-mobile-container span {
+        display: flex;
     }
 }
