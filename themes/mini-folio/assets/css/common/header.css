@@ -58,7 +58,7 @@
     margin-right: 20px;
 }
 .logo a img {
-    border-radius: var(--radius);
+    border-radius: 6px;
 }
 
 button#theme-toggle {
