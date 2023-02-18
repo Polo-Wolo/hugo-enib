@@ -1,5 +1,23 @@
 {{ define "main" }}
 
-<div>index.html</div>
+<div class="profile">
+    {{- with site.Params.profileMode }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- with .cv }}
+            <div class="buttons">
+                {{- range . }}
+                <a class="button" href="{{ .filePath }}" rel="noopener" target="_blank">
+                    <span>
+                        {{ .name }}
+                    </span>
+                </a>
+                {{- end }}
+            </div>
+            {{- end }}
+    {{- end}}
+</div>
 
 {{ end }}

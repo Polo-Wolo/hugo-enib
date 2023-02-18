@@ -38,8 +38,6 @@ h1 {
     max-width: 650px;
 }
 
-
-
 .section h1 {
     margin-bottom: var(--gap);
 }
@@ -98,6 +96,17 @@ h1 {
     margin-left: calc(var(--gap)/2);
 }
 
+a.button {
+    background-color: var(--card-bg);
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    font-size: var(--title-size);
+    align-items: center;
+}
+
+a.button:hover {
+    background-color: var(--color);
+}
 .icon,
 .icon-link {
     height: 1.25rem;

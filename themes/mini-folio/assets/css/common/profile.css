@@ -1,0 +1,17 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 9999rem;
+}
+
+.buttons {
+    margin: var(--gap) 0;
+}
+
+.buttons a.button+a.button {
+    margin-inline-start: var(--gap);
+}
