@@ -1,23 +1,24 @@
 {{ define "main" }}
-
-<div class="profile">
-    {{- with site.Params.profileMode }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
-            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
-        <h1>{{ .title | default site.Title | markdownify }}</h1>
-        <span>{{ .subtitle | markdownify }}</span>
-        {{- with .cv }}
-            <div class="buttons">
-                {{- range . }}
-                <a class="button" href="{{ .filePath }}" rel="noopener" target="_blank">
-                    <span>
-                        {{ .name }}
-                    </span>
-                </a>
+<span class="home">
+    <div class="profile">
+        {{- with site.Params.profile }}
+            <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            <h1>{{ .title | default site.Title }}</h1>
+            <span>{{ .subtitle }}</span>
+            {{- with .cv }}
+                <div class="buttons">
+                    {{- range . }}
+                    <a class="button" href="{{ .filePath }}" rel="noopener" target="_blank">
+                        <span>
+                            {{ .name }}
+                        </span>
+                    </a>
+                    {{- end }}
+                </div>
                 {{- end }}
-            </div>
-            {{- end }}
-    {{- end}}
-</div>
+        {{- end}}
+    </div>
+</span>
 
 {{ end }}

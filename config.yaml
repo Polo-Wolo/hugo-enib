@@ -35,14 +35,13 @@ Params:
     enable: true
     #path: /img/profile_picture.jpeg
     #url: https://polo-wolo.github.io/portfolio/
-  profileMode:
-    enabled: true
-    title: "Paul Walczak" # optional default will be site title
+
+  profile:
+    title: "Paul Walczak"
     subtitle: "4th year student in generalist engineering school"
     imageUrl: "img/profile_picture.jpeg" # optional
-    imageTitle: "<title of image as alt>" # optional
-    imageWidth: 180 # custom size
-    imageHeight: 180 # custom size
+    imageWidth: 180
+    imageHeight: 180
     cv:
       - name: French CV
         filePath: "/pdf/french_cv.pdf"

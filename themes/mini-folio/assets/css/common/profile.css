@@ -1,7 +1,13 @@
+.home {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+}
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .profile img {
