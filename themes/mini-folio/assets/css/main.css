@@ -97,7 +97,7 @@ h1 {
 }
 
 a.button {
-    background-color: var(--card-bg);
+    background-color: var(--tertiary);
     padding: 8px 12px;
     border-radius: var(--radius);
     font-size: var(--title-size);
