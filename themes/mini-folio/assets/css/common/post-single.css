@@ -229,6 +229,7 @@
 
 .paginav {
     border-radius: var(--radius);
+    border: 1px solid var(--border);
 }
 
 
@@ -244,6 +245,10 @@
     padding-inline-start: 14px;
     padding-inline-end: 14px;
     border-radius: var(--radius);
+}
+
+.paginav a:hover {
+    background-color: var(--entry);
 }
 
 .paginav .title,
