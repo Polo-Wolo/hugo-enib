@@ -4,7 +4,7 @@ date: 2022-12-29T21:33:05+01:00
 draft: false
 
 cover:
-    image: img/profile_picture.jpeg
+    image: img/thumnail.png
     alt: This is my alt
 
 description: Here is a simple markdown to explain how to contribute to the portfolio development.
