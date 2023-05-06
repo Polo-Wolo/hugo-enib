@@ -147,6 +147,16 @@ a.button:hover {
     height:calc((var(--content-size) + 8px)*6);
 }
 
+.training-list .timeline:first-child .line {
+    border-top-left-radius: 9999rem;
+    border-top-right-radius: 9999rem;
+}
+
+.training-list .timeline:last-child .line {
+    border-bottom-left-radius: 9999rem;
+    border-bottom-right-radius: 9999rem;
+}
+
 .timeline {
     display: flex;
     width: 100%;
@@ -322,7 +332,7 @@ pre:hover .lang-code {
     .entry-cover {
         width: 100%;
     }
-    .list .card {
+    .card {
         width: 100%;
         border-radius: 0px;
     }

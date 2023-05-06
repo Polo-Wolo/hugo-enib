@@ -17,31 +17,33 @@
 </div>
 {{ end }}
 
-{{ range $list }}
-<div class="timeline">
-    <div class="spline">
-        <span class="line"></span>
-        <span class="circle"></span>
-    </div>
-    <div class="card card-padding timeline-card">
-        <div class="card-header">
-            <span class="card-title">
-                {{ .title }}
-            </span>
-            <span class="content">
-                {{ .city }}, {{ .country }}
-            </span>
+<div class="training-list">
+    {{ range $list }}
+    <div class="timeline">
+        <div class="spline">
+            <span class="line"></span>
+            <span class="circle"></span>
         </div>
-        <span class="italic">{{ .date }}</span>
-        {{- $array := .list -}}
-        {{ range .content}}
-            <div class="content content-ml">
-                {{ . }}
+        <div class="card card-padding timeline-card">
+            <div class="card-header">
+                <span class="card-title">
+                    {{ .title }}
+                </span>
+                <span class="content">
+                    {{ .city }}, {{ .country }}
+                </span>
             </div>
-        {{ end }}
+            <span class="italic">{{ .date }}</span>
+            {{- $array := .list -}}
+            {{ range .content}}
+                <div class="content content-ml">
+                    {{ . }}
+                </div>
+            {{ end }}
+        </div>
     </div>
+    {{ end }}
 </div>
-{{ end }}
 
 {{ if .context.Site.Params.timeline_overflow }}
 <div class="timeline">
