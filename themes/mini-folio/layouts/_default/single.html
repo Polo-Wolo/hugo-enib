@@ -10,7 +10,7 @@
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="tags-row">
         {{- range ($.GetTerms $tags) }}
-            <li><a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            <li><a class="tag tag-hover" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
         {{- end }}
     </ul>
     {{- if (.Param "ShowPostNavLinks") }}

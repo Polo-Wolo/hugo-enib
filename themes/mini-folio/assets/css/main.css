@@ -247,7 +247,7 @@ a.button:hover {
     border: 1px solid transparent;
 }
 
-.tag:hover {
+.tag-hover:hover {
     border: 1px solid var(--border);
     background-color: transparent;
 }
