@@ -154,7 +154,7 @@ body:not(.dark) #moon {
     width: 0px;
     height: 24px;
     display: block;
-    border-left: 1px solid var(--entry);
+    border-left: 1px solid var(--tertiary);
     margin: 0 var(--gap);
 }
 
