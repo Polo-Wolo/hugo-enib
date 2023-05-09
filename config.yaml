@@ -48,8 +48,27 @@ Params:
       - name: English CV
         filePath: "/pdf/english_cv.pdf"
 
+    mail: john.doe@gmail.com
+    phone: +33 0 12 34 56 78
+    socials:
+        - name: linkedin
+          svg : linkedin-in
+          link: https://www.linkedin.com/in/paul-walczak-639106194/ 
+        - name: instagram
+          svg : instagram
+          link: 
+        - name: facebook
+          svg : facebook
+          link: 
+        - name: github
+          svg : github
+          link: 
+        - name: gitlab
+          svg : gitlab
+          link: 
+
   website_logo : true
-  timeline_overflow : false
+  timeline_overflow : false       # training timeline dotted lines
   ShowPostNavLinks : true
   repo_url : https://github.com/Polo-Wolo/hugo-enib
 
@@ -169,6 +188,7 @@ Params:
         svg : cube-solid
         list:
           - Autodesk Fusion 360
+          - Gazebo
           - CATIA
           - EAGLE
           - Blender (newbie)
@@ -177,3 +197,14 @@ Params:
         list:
           - French (native)
           - English (proficient)
+
+  hobbies:
+    #title: Custom title
+    enable: true
+    types:
+      - name: Microcontroller programming
+        svg : microchip-solid
+        list:
+          - Arduino
+          - STM32
+          - CM33

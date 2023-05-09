@@ -36,7 +36,7 @@
     margin: auto auto auto 15px;
     flex-wrap: inherit;
     transition-property: opacity;
-    transition-duration: 0.25s;
+    transition-duration: 0.15s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
@@ -71,7 +71,7 @@ button#theme-toggle {
     position: relative;
     flex-shrink: 0;
     transition-property: border-color;
-    transition-duration: 0.25s;
+    transition-duration: 0.15s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
@@ -131,7 +131,7 @@ body:not(.dark) #moon {
     line-height: 40px;
     font-weight: 500;
     transition-property: color;
-    transition-duration: 0.25s;
+    transition-duration: 0.15s;
     transition-timing-function: ease;
     transition-delay: 0s;
     margin: 0 auto;
@@ -174,7 +174,7 @@ body:not(.dark) #moon {
     height: 0.125rem;
     width: 1.5rem;
     transition-property: all;
-    transition-duration: 0.25s;
+    transition-duration: 0.15s;
     transition-timing-function: ease;
     transition-delay: 0s;
     transform-origin: left;
@@ -236,7 +236,7 @@ body:not(.dark) #moon {
         transform: translate(0, -100%);
         z-index: -1;
         transition-property: transform;
-        transition-duration: 0.25s;
+        transition-duration: 0.15s;
         transition-timing-function: ease;
         transition-delay: 0s;
     }

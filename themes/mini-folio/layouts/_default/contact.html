@@ -1,6 +1,15 @@
 {{ define "main" }}
 
-<div>contact.html</div>
-<div>{{ .Title }}</div>
+<h1>{{ .Title }}</h1>
+
+{{- with site.Params.profile }}
+    {{- $list:= .socials -}}
+    {{ range $list }}
+    <a href="{{ .link }}" rel="noopener" target="_blank">
+        {{ $svg := .svg }}
+        {{ partial "fontawesome.html" (dict "context" . "name" $svg "class" "icon icon-link-color") }}
+    </a>
+    {{- end }}
+{{- end}}
 
 {{ end }}
