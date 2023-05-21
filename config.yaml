@@ -51,21 +51,21 @@ Params:
     mail: john.doe@gmail.com
     phone: +33 0 12 34 56 78
     socials:
-        - name: linkedin
+        - name: Paul Walczak
           svg : linkedin-in
           link: https://www.linkedin.com/in/paul-walczak-639106194/ 
-        - name: instagram
+        - name: paul_wzk
           svg : instagram
-          link: 
-        - name: facebook
+          link: https://www.instagram.com/paul_wzk/
+        - name: Paul Walczak
           svg : facebook
-          link: 
-        - name: github
+          link: https://www.facebook.com/profile.php?id=100009639675518
+        - name: Polo-Wolo
           svg : github
-          link: 
-        - name: gitlab
+          link: https://github.com/Polo-Wolo
+        - name: p9walcza
           svg : gitlab
-          link: 
+          link: https://git.enib.fr/p9walcza
 
   website_logo : true
   timeline_overflow : false       # training timeline dotted lines

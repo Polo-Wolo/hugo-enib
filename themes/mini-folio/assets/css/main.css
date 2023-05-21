@@ -42,7 +42,10 @@ h1 {
     margin-bottom: var(--gap);
 }
 
-.section .card {
+#experience .card,
+#education .card,
+#training .card,
+#skills .card{
     margin-top: var(--gap);
 }
 
@@ -88,6 +91,7 @@ h1 {
 
 .card-row {
     display: flex;
+    align-items: center;
 }
 
 .card-title {
@@ -209,6 +213,10 @@ a.button:hover {
     justify-content: space-between;
 }
 
+.social-pseudo {
+    margin-left: var(--gap);
+}
+
 .medium-line,
 .small-line {
     border-radius: 999rem;
@@ -280,12 +288,13 @@ a.button:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-#projects .grid-elem-width {
-    margin: calc(var(--gap)/2) var(--gap);
+.grid-elem-width {
+    margin: calc(var(--gap) ) var(--gap);
 }
 
-#projects article {
-    margin: 0 0 var(--gap) 0;
+.social:hover .icon-link-color {
+    color: var(--color);
+    cursor: pointer;
 }
 
 div.highlight,

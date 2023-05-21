@@ -3,13 +3,18 @@
 <h1>{{ .Title }}</h1>
 
 {{- with site.Params.profile }}
-    {{- $list:= .socials -}}
-    {{ range $list }}
-    <a href="{{ .link }}" rel="noopener" target="_blank">
-        {{ $svg := .svg }}
-        {{ partial "fontawesome.html" (dict "context" . "name" $svg "class" "icon icon-link-color") }}
-    </a>
-    {{- end }}
+    <div class="grid">
+        {{- $list:= .socials -}}
+        {{ range $list }}
+        <a href="{{ .link }}" rel="noopener" target="_blank" class="grid-elem-width social">
+            <div class="card card-hover card-padding card-row">
+                {{ $svg := .svg }}
+                {{ partial "fontawesome.html" (dict "context" . "name" $svg "class" "icon icon-link-color") }}
+                <span class="social-pseudo">{{ .name }}</span>
+            </div>
+        </a>
+        {{- end }}
+    </div>
 {{- end}}
 
 {{ end }}
