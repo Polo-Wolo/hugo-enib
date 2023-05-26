@@ -66,6 +66,9 @@ Params:
         - name: p9walcza
           svg : gitlab
           link: https://git.enib.fr/p9walcza
+        - name: polo.walczak@gmail.com
+          svg : envelope-solid
+          link: mailto:polo.walczak@gmail.com
 
   website_logo : true
   timeline_overflow : false       # training timeline dotted lines
