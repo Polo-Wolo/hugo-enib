@@ -79,10 +79,71 @@ Params:
   experience:
     #title: Custom title
     enable: true
+    list:
+      - society: Kerpape
+        society_link: http://kerpape.mutualite56.fr/fr
+        title: Technician intership
+        date: June 2022
+        duration: 2 months
+        content: 
+          - Design and 3D printing in a rehabilitation center
+        city: Ploemeur
+        country: FRANCE
+      - society: BreizElec
+        society_link: https://www.breizelec.fr/
+        title: Fixed-term contract
+        date: July 2021
+        duration: 1 month
+        content: 
+          - Inserting components and reworking solder joints
+        city: Châteaulin
+        country: FRANCE
+      - society: BreizElec
+        society_link: https://www.breizelec.fr/
+        title: Intership
+        date: Feb. 2021
+        duration: 1 month
+        content: 
+          - Inserting components and reworking solder joints
+        city: Châteaulin
+        country: FRANCE
+      - society: BNP Paribas
+        society_link: https://group.bnpparibas/
+        title: Fixed-term contract
+        date: July 2020
+        duration: 1 month
+        content: 
+          - IWelcoming customers, handling routine inquiries and sales activity as receptionist
+        city: Châteaulin
+        country: FRANCE
+      - society: BNP Paribas
+        society_link: https://group.bnpparibas/
+        title: Fixed-term contract
+        date: Aug. 2019
+        duration: 1 month
+        content: 
+          - IWelcoming customers, handling routine inquiries and sales activity as receptionist
+        city: Châteaulin
+        country: FRANCE
 
   education:
     title: Custom Education title
     enable: true
+    list:
+      - title: Generalist Engineer
+        date: 2019 - 2024
+        content: 
+          - ENIB - École Nationale d'Ingénieur de Brest
+          - General - Electronics, Mechatronics, Computer Science
+          - Signal and image processing option
+        city: Plouzané
+        country: FRANCE
+      - title: Scientific Baccalaureat
+        date: July 2019
+        content: 
+          - Digital science and European Section
+        city: Châteaulin
+        country: FRANCE
 
   volunteering:
     #title: Custom title
@@ -114,14 +175,6 @@ Params:
     #title: Custom title
     enable: true
     list:
-      - title: Generalist Engineer
-        date: 2019 - 2024
-        content: 
-          - ENIB - École Nationale d'Ingénieur de Brest
-          - General - Electronics, Mechatronics, Computer Science
-          - Signal and image processing option
-        city: Plouzané
-        country: FRANCE
       - title: Sauveteur Secouriste du Travail
         date: Jan. 2022
         content: 
@@ -139,12 +192,6 @@ Params:
         content: 
           - First Aid in Team Level 1 certification
         city: Brest
-        country: FRANCE
-      - title: Scientific Baccalaureat
-        date: July 2019
-        content: 
-          - Digital science and European Section
-        city: Châteaulin
         country: FRANCE
       - title: BNSSA
         date: Avr. 2019

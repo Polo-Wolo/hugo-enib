@@ -1,5 +1,7 @@
 {{ if .Site.Params.education.enable | default false }}
 <section id="education" class="section">
 	<h1>{{ .Site.Params.education.title | default "Education" }}</h1>
+	{{ $list := .Site.Params.education.list }}
+	{{ partial "components/timeline-education.html" (dict "context" . "list" $list) }}
 </section>
 {{ end }}
